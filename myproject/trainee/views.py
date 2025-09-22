@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
 def alltrainees(request):
     trainees = [
         [1, 'Amr', 'Python'],
@@ -22,3 +21,4 @@ def updatetrainee(request, id):
 
 def deletetrainee(request, id):
     return HttpResponse(f"<h1>welcome to delete trainee {id}</h1>")
+
